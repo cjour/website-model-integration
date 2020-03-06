@@ -1,0 +1,185 @@
+@media screen and (min-width: 2160px) 
+{
+
+/*this file is impacting all the other css files. Why ?*/
+
+/*Header*/
+
+.fixed-header {
+
+	height:10%;
+}
+
+
+#menu_burger {
+
+	visibility: hidden;
+	position: relative;
+	width:40%;
+	background-color: red;
+}
+
+#menu_burger i {
+
+	position: absolute;
+	right:0;
+}
+
+.fixed-header nav ul li a {
+
+	font-size: 2.5rem;
+}
+
+.fixed-header img {
+
+	
+	height:50%;
+}
+
+#container_slider {
+
+	margin-top: 6em;
+}
+
+
+
+/*Section slider*/
+
+
+
+#legend h1{
+
+	font-size: 5rem;
+}
+
+#legend p {
+
+	font-size: 4rem;
+}
+
+.bouton {
+
+	font-size: 3rem;
+}
+
+h2 {
+
+font-size: 5rem;
+
+}
+
+.container_arrow_left {
+
+    width:3em;
+    height: 6em;   
+	
+}
+
+.container_arrow_right {
+
+	
+    width:3em;
+    height:6em;   
+	
+}
+
+#left_arrow {
+
+	
+    height: 1em;
+    width: 1em;  
+
+}
+
+#right_arrow {
+
+
+    height: 1em;
+    width: 1em;
+
+}
+
+
+
+/*Section nos services*/
+
+.span_style_circle_blue {
+
+	font-size:2rem;
+}
+
+
+#container_ordinateur img{
+
+	height:90%;
+}
+
+.container_nos_services p{
+
+	font-size: 2.5rem;
+
+}
+
+.list_service h3 {
+
+	font-size: 3.5rem;
+	margin-bottom: 1em;
+
+}
+
+.icon_span, .icon_span::after {
+
+	font-size : 3rem;
+}
+
+
+.container_nos_projets p{
+
+	font-size: 2.5rem;
+}
+
+#container_nos_projets_portfolio *, .container_nos_projets button {
+
+	font-size:2.5rem;
+}
+
+#container_nos_projets_portfolio {
+
+	justify-content: space-around;
+}
+
+.bouton_nav_portfolio:focus, .bouton_nav_portfolio:hover 
+
+{
+
+	font-size: 2.5rem;
+}
+
+
+
+
+#formulaire * {
+
+	font-size : 3rem;
+}
+
+#contact_info {
+
+	font-size: 3rem;
+}
+
+#bg_iframe {
+
+	height:1600px;
+}
+
+iframe {
+
+	
+	height:1600px;
+	
+}
+
+
+
+}

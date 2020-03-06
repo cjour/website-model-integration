@@ -1,0 +1,745 @@
+
+
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('fonts/Roboto-Black.ttf');
+    	  }
+
+@font-face {
+
+
+  	font-family: 'Roboto-Regular';
+  	src:url('fonts/Roboto-Regular.ttf');
+  		 }
+
+@font-face {
+
+
+  	font-family: 'Roboto-Bold';
+  	src:url('fonts/Roboto-Bold.ttf');
+  		  }
+
+
+
+body {
+
+	
+	width:100%;
+	margin:auto; }
+
+/*Header*/
+
+#menu_burger {
+
+	visibility: hidden;
+}
+
+.fixed-header {
+    position: fixed;
+    z-index:1; /*Existe t-il une autre solution pour que header ne passe pas derrière slide ?r*/ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#FFFFFF;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+ }
+
+h1, h2 {
+
+	font-family:'Roboto-Black',  Open Sans;
+	font-size: 2.5rem;
+}
+
+h3 {
+
+	font-family: 'Roboto-Bold',  Open Sans;
+	font-size:1em;
+	color:black;
+}
+
+.bouton_nav_portfolio{
+
+	outline-style: none;
+}
+
+
+
+p, li, a {
+
+	font-family:'Roboto-Regular',  Open Sans;
+	color:grey;
+	font-size: 1rem;
+	line-height: 1.8em;
+	
+}
+
+
+nav,ul {
+
+	display:flex;
+	justify-content:space-between;
+}
+
+ul {
+
+	
+	list-style: none;
+	display:flex;
+}
+
+nav ul li a {
+
+	
+	text-decoration: none;
+	color: #828485;
+	font-size:1rem; 
+}
+
+
+header nav ul li a{
+
+	padding:1em;
+}
+
+header nav ul li a:hover {
+
+	border-top:solid .2em;  
+	border-color:#5cadd3;
+	
+	
+}
+
+header nav ul li:focus {
+
+	border-top-style:solid; 
+	border-radius:2px; 
+	border-color:#5cadd3;
+	
+	 
+
+}
+
+.container_slider {
+
+position:relative;
+width:100%;
+height:100%;
+margin-top: 4em;
+
+
+}
+
+#slider {
+
+	display: flex;
+	width:100%;
+	height:100%;
+	justify-content: space-between;
+	align-items: center;
+	position:absolute;
+	left:0;
+	top:0;
+
+}
+
+#legend {
+
+	width:70%;
+	position: absolute;
+	left:10%;
+	top:30%;
+
+}
+
+
+#legend h1 {
+
+margin-top: 0px;
+margin-bottom: 0px;
+	color:#FFFFFF;
+
+}
+
+#legend p {
+
+	
+	margin-top: 0px;
+	color:#FFFFFF;
+}
+
+.image_slider {
+
+	width:100%;
+	height:100%;
+
+}
+
+.container_arrow_left {
+
+	position: absolute;
+	background-color: black;
+	top:45%;
+	left:0;
+    width:3em;
+    height: 6em;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-left: 0;
+    opacity:0.5;
+	
+}
+
+.container_arrow_right {
+
+	position: absolute;
+	top:45%;
+	right:0;
+	background-color: black;
+    width: 3em;
+    height: 6em;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-left: 0;
+    transform: rotate(180deg);
+    opacity:0.5;
+	
+}
+
+#left_arrow {
+
+	color:#FFFFFF;
+    border-right: 0.3em  solid; 
+    border-bottom: 0.3em  solid;
+    height: 1em;
+    width: 1em; 
+    transform :rotate(135deg);
+    margin-top: 75%;
+    margin-left: 25%;
+
+    
+
+}
+
+#right_arrow {
+
+	color:#FFFFFF;
+    border-right: 0.3em solid; 
+    border-bottom: 0.3em solid;
+    height: 1em;
+    width: 1em;
+    transform :rotate(135deg);
+    margin-top: 75%;
+    margin-left: 25%;
+    
+
+}
+
+#loading_bar_container {
+
+	width:100%;
+	height:0.3em;
+	background-color:rgba(0,0,0, 0.5);
+	position: absolute;
+	bottom:0;
+	left:0;
+
+}
+
+#loading_bar {
+
+	width:10%;
+	height:0.29em;
+	background-color:#5bbede;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+
+#WEBAGENCY {
+
+	color:#5bbede;
+}
+
+
+.bouton {
+
+   color: #FFFFFF;
+   font-family: 'Roboto-Regular', Open Sans;
+   font-size: 1rem;
+   background-color: #5cadd3;
+   text-decoration: none;
+   padding:0.8em;
+   text-align: center;
+   cursor:pointer;
+   border:solid thin #5cadd3;
+   border-bottom: solid #1783ba;
+   border-radius: 5px;
+
+  
+
+}
+
+/*Deuxieme ancre - section services */
+
+.container_nos_services > p {
+
+	text-align: center;
+
+}
+
+.container_nos_services {
+
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height:100%;
+	width:100%;
+	
+}
+
+.span_style_circle_blue {
+
+  height: 1em;
+  width: 1em;
+  background-color: #5cadd3;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px #FFFFFF;
+  display:inline-block;
+  position: relative;
+
+}
+
+
+/*N'est-il pas possible de faire le trait sans multiplier le nombre de " _ " */
+
+.span_style_circle_blue::before {
+
+	content:'________';
+	color:grey;
+	position:absolute;
+	bottom:40%;
+	left:0;
+	margin-left:1.3em; 
+
+
+}
+
+.span_style_circle_blue::after {
+
+content:'________';
+	color:grey;
+	position:absolute;
+	bottom:40%;
+	right:0;
+	margin-right:1.3em; 
+
+
+}
+
+#container_ordinateur {
+
+	width:50%;
+}
+
+#container_list_service {
+
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.list_service {
+
+	width:50%;
+	height:100%;	
+}
+
+.list_service ul   {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+.list_service ul li {
+
+	display: flex;
+	align-items: center;
+}
+
+
+.list_service p {
+
+	margin-top:2px;
+}
+
+.list_service h3 {
+
+	margin-bottom: 0px;
+	font-size:1.5em;
+}
+
+.icon_span {
+
+	display:block;
+	height:2em;
+	width:2em;
+	border:solid thin #e4e9eb;
+	padding:1em;
+	border-radius: 50%; /*i contenu dans un span pour obtenir une hauteur fixe (pb du rond qui devient eliptique)*/
+	color:#5cadd3;
+	margin-right: 2em;
+	position: relative;
+}
+
+
+
+.icon_span:hover {
+
+	box-shadow: 0px 0px 5px 5px #5cadd3;
+}
+
+.icon_span::after {
+
+  content :'';
+  height: 1em;
+  width: 1em;
+  background-color: #5cadd3;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px #FFFFFF;
+  position: absolute;
+  right:-.5em;
+  top:1.5em;
+  }	
+
+/*Troisième ancre - section portfolio*/	
+
+
+.container_nos_projets {
+
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	text-align: center;
+	background:#e9edf0;
+	
+	
+}
+
+figure {
+
+	position: relative;
+	width:20%;
+	
+}
+
+figcaption {
+
+	color:#FFFFFF;
+	background-color: rgba(0,0,0, 0.5);
+	position:absolute;
+	width:100%;
+	height:50%;
+	font-family:'Roboto-Regular', Open Sans;
+	visibility:hidden;
+	bottom:0;
+	font-size: 1em;
+	text-align: left;
+	 
+
+}
+
+figure:hover figcaption {
+
+	visibility: visible;
+}
+
+figcaption i {
+
+	position:absolute;
+	right:.5em;
+	top:-25%;
+	padding:1em;
+	color:#FFFFFF;
+	background-color:#5cadd3;
+	border :0.3em solid #FFFFFF;
+	border-radius: 50% 50% 50% 50%;
+
+}
+
+.h3_portfolio {
+
+	margin-bottom: .5em;
+	margin-left: 5%;
+	color:#FFFFFF
+}
+
+figcaption p {
+
+	margin-left: 5%;
+	margin-right: 5%;
+	color:#FFFFFF;
+	margin-top: 2px;
+	line-height: 1em;
+}
+
+figure img {
+
+	width:100%;
+	height:100%;
+}
+
+
+#container_nos_projets_portfolio {
+
+	
+	width:100%;
+	display:flex;
+	flex-wrap: wrap;
+	margin-bottom: none;
+	justify-content: center;
+	
+}
+
+#menu_portfolio {
+
+	margin-top:2em;
+	margin-bottom: 2em;
+	display:flex;
+
+}
+
+
+input[type="radio"] {
+
+	display:none;
+}
+
+
+.Allwork {
+
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.Portfolio {
+
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+
+label {
+
+	
+   color: grey;
+   font-family: 'Roboto-Regular', Open Sans;
+   font-size: 1em;
+   background-color: #DCDCDC;
+   text-align: center;
+   text-decoration: none;
+   padding:0.8em;
+   border:solid thin #DCDCDC;
+   border-bottom: solid #DCDCDC;
+   position:relative;
+}
+
+
+label:hover{
+    color: #FFFFFF;
+   font-family: 'Roboto-Regular', Open Sans;
+   font-size: 1em;
+   background-color: #5cadd3;
+   text-decoration: none;
+   padding:0.8em;
+   cursor:pointer;
+   border:solid thin #5cadd3;
+   border-bottom: solid #1783ba;
+}
+
+label:hover::after {
+  content:'';
+  border-bottom: .5em solid #1783ba;
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  transform: rotate(180deg);
+}
+
+input:checked + label{
+  
+   
+   color: #FFFFFF;
+   font-family: 'Roboto-Regular', Open Sans;
+   font-size: 1em;
+   background-color: #5cadd3;
+   text-decoration: none;
+   padding:0.8em;
+   cursor:pointer;
+   border:solid thin #5cadd3;
+   border-bottom: solid #1783ba;
+
+}
+
+input:checked + label::after{
+  content:'';
+  border-bottom: 0.5em solid #1783ba;
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  transform: rotate(180deg);
+}
+
+
+/*Contact container*/
+iframe {
+
+	position: relative;
+	z-index: 2;
+
+}
+
+
+#contact_title {
+
+	
+	display: block;
+	text-align: center;
+	display: none;
+		
+}
+
+#container_contact {
+
+	
+	min-width: 100%;
+	height:750px;
+	position:relative;
+
+	
+}
+
+
+#formulaire {
+
+	position:absolute;
+	font-family: 'Roboto-Regular';
+	font-size:1rem;
+	background-color: rgba(255,255,255, 0.8);
+	padding-left:2em;
+	padding-right:2em;
+	padding-top:1em;
+	padding-bottom:1em;
+	right:10%;
+	top:10%;
+	z-index: 100;
+	 
+}
+
+#contact_info {
+
+	color:black;
+	font-size: 1.5rem;
+	font-family: 'Roboto-Bold';
+	
+}
+
+address {
+
+	color:#616161;
+	margin-bottom: 1em;
+	font-style: normal;
+	font-family: 'Roboto-Regular';
+
+}
+
+.padding_left {
+
+	padding-left: 1em;
+}
+
+input {
+
+	color:#616161;
+	display: inline-block;
+	text-align: left;
+	width:20em; 
+	font-family: 'Roboto-Regular';
+	font-size: 1rem;
+	margin-bottom: 1em;
+	height:2em;
+	border-radius: 0.2em;
+	border:solid thin #b9b9b9;
+
+
+	
+}
+
+textarea {
+
+	color:#616161;
+	width:20em;
+	border-radius:2%;
+	font-family: 'Roboto-Regular';
+	font-size: 1rem;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	border-radius: 0.2em;
+	border:solid thin #b9b9b9;
+}
+
+
+
+
+.bouton_formulaire {
+   
+  color: #FFFFFF;
+   font-family: 'Roboto-Regular', Open Sans;
+   font-size: 1rem;
+   background-color: #5cadd3;
+   text-decoration: none;
+   text-align: center;
+   cursor:pointer;
+   border:solid thin #5cadd3;
+   border-bottom: solid #1783ba;
+   border-radius: 5px;
+   width:45%;
+   
+}
+
+#bg_iframe {
+
+	width:100%;
+	height:750px;
+	background-color:rgb(135,206,235);
+	opacity: 0.4;
+	position:absolute;
+	z-index: 2;
+	top:0;
+	bottom:0;
+	pointer-events: none;
+	
+}
+
+iframe {
+
+	border:none;
+	height:750px;
+	width:100%; 
+}

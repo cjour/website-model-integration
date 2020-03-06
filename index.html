@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>WebAgency</title>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Metatags social network-->
+	<meta name="description" content="Une agence de design web alliant expérience utilisateur, performance et référencement optimal." />
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@publisher_handle">
+	<meta name="twitter:title" content="WebAgency">
+	<meta name="twitter:description" content="Une agence de design web alliant expérience utilisateur, performance et référencement optimal.">
+	<meta name="twitter:creator" content="@author_handle">
+	<meta name="twitter:image" content="http://www.c-jourdain.com/public_html/images/slider/bg1.jpg">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="WebAgency" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.c-jourdain.com/" />
+	<meta property="og:image" content="http://www.c-jourdain.com/public_html/images/slider/bg1.jpg" />
+	<meta property="og:description" content="Une agence de design web alliant expérience utilisateur, performance et référencement optimal." /> 
+	
+	<!--Style sheets links-->
+	<link rel="stylesheet" type="text/css" href="files/desktop.css">
+	<link rel="stylesheet" media="screen and (max-width: 1280px)" href="files/petite_resolution.css" />
+	<link rel="stylesheet" media="screen and (max-width: 640px)" href="files/tres_petite_resolution.css" />
+	<link rel="stylesheet" media="screen and (min-width: 2160px)" href="files/tres_grande_resolution.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body> <!-- Largeur page fixée à 100% -->
+	
+	<!--Header logo + menu navigation (système ancre) position fixé on scroll-->
+	<header class ="fixed-header">
+		
+		<img src="files/images/logo.png" alt="logo"/>
+		<span id="menu_burger"><i class="fas fa-bars"></i></span>
+		<nav id="nav_header">
+			<ul>
+				<li><a href="#accueil" tabindex="1"> Accueil</a></li>
+				<li><a href="#ancre_nos_services" tabindex="2"> Services</a></li>
+				<li><a href="#ancre_portfolio" tabindex="3"> Portfolio</a></li>
+				<li><a href="#ancre_contact" tabindex="4"> Contact</a></li>				
+			</ul>
+		</nav>
+		
+
+	
+	</header>	
+
+
+		<!--Section Slider-->
+
+		<section id="accueil" class="container_slider"><!--container en position relative (parent)-->
+
+				<img class="image_slider" src="files/images/slider/bg1.jpg" alt="WebAgency : L'agence de tous vos projets !" />
+
+				<div id="slider"><!--slider en position absolue (enfant)-->
+					
+
+					<div class="container_arrow_left"><div id="left_arrow"></div></div>
+					<div class="container_arrow_right" ><div id="right_arrow"></div></div>                	
+ 
+                        <div id="legend">
+                
+                            <h1><span id="WEBAGENCY">WEBAGENCY</span> : L'AGENCE DE TOUS <br>VOS PROJETS !</h1>
+                            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser!</p>
+                            <a class="bouton" href="" tabindex="5">Plus d'infos</a>
+                
+                        </div> 
+                
+                   
+                    
+
+                    <span id="loading_bar_container"><span id="loading_bar"></span></span>
+                </div>
+
+				
+		</section>
+
+
+		<!--Deuxieme ancre-->
+
+		<section class="container_nos_services" id="ancre_nos_services">
+			
+			
+			<h2>NOS SERVICES</h2>
+			<span class="span_style_circle_blue"></span>
+			<p>Avons nous bien compris vos besoins ? Où en sommes nous sur votre produit ? Vos besoins évoluent ? <br> Nous travaillons en méthode AGILE pour créer un produit correspondant à vos attentes.</p>
+			
+
+			<div id="container_list_service">
+				<div id="container_ordinateur">
+					<img src="files/images/main-feature.png" alt="" />
+				</div>
+
+				<div class="list_service">
+
+					<ul>
+						<li>	
+							<span class="icon_span"><i class="fas fa-chart-line fa-2x"></i></span>
+
+							<div>
+								<h3>UX design</h3>
+
+								<p>Une conception de votre produit ciblant une expérience utilisateur fluide, agréable et instinctive.</p>
+							</div>	
+							
+						</li>
+
+						<li>
+							<span class="icon_span"><i class="fas fa-cubes fa-2x"></i></span>
+							
+							<div>	
+								<h3>UI design</h3>
+
+								<p>Mêler l'esthétique à l'aspect fonctionnel de votre produit, c'est une de nos priorités.</p>
+							</div>
+
+						</li>
+
+						<li>
+							<span class="icon_span"><i class="fas fa-chart-pie fa-2x"></i></span>
+							
+							<div>	
+								<h3>SEO</h3>
+								<p>Votre projet pensé pour avoir le meilleur référencement possible sur la toile.</p>
+							</div>
+							
+						</li>
+
+					</ul>						
+				</div>	
+
+			</div>
+		</section>
+
+
+		<!--Section NOS SERVICES-->
+	
+		<section class="container_nos_projets" id="ancre_portfolio">
+			
+				<h2>NOS PROJETS</h2>
+				<span class="span_style_circle_blue"></span>
+				<p>Pas encore convaincu par la WebAgency ? Explorez nos nombreux projets pour voir l'étendue de nos compétences !</p>
+				<div id="menu_portfolio">
+					
+						<input type="radio" id="Allwork_lien" name="bouton_portfolio" checked></input>
+						<label for="Allwork_lien" class="Allwork">All works</label>
+
+						<input type="radio" id="Creative_lien" name="bouton_portfolio"></input>
+						<label for="Creative_lien" class="Creative">Creative</label>
+
+						<input type="radio" id="Corporate_lien" name="bouton_portfolio"></input>
+						<label for="Corporate_lien" class="Corporate">Corporate</label>
+
+						<input type="radio" id="Portfolio_lien" name="bouton_portfolio"></input>
+						<label for="Portfolio_lien" class="Portfolio">Portfolio</label>
+					
+				</div>
+			
+
+			<div id="container_nos_projets_portfolio">
+				<figure>
+					<img src="files/images/portfolio/01.jpg" alt="">
+					<figcaption>
+						<i class="fas fa-eye"></i>
+						<h3 class=h3_portfolio>Optic</h3>
+						<p>Vos lunettes pas cher.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img src="files/images/portfolio/02.jpg" alt="">
+					<figcaption>
+						<i class="fas fa-eye"></i>
+						<h3 class=h3_portfolio>Déguisement & co.</h3>
+						<p>Vos déguisements pour une soirée.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img  src="files/images/portfolio/03.jpg" alt="">
+					<figcaption>
+						<i class="fas fa-eye"></i>
+						<h3 class=h3_portfolio>Pompadour Origins</h3>
+						<p>Au top de la mode !</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img   src="files/images/portfolio/04.jpg" alt="">
+					<figcaption>
+						<i class="fas fa-eye"></i> 
+						<h3 class=h3_portfolio>Papetterie</h3>  
+						<p>Vos impressions en 24h top chrono.</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img   src="files/images/portfolio/05.jpg" alt="">
+					<figcaption>
+						<i class="fas fa-eye"></i> 
+						<h3 class=h3_portfolio>Clothes drive </h3> 
+						<p> Votre drive de vêtements.</p>
+					</figcaption>
+				</figure>	
+				
+				<figure>
+					<img   src="files/images/portfolio/06.jpg" alt="">
+					<figcaption>
+						<i class="fas fa-eye"></i>
+						<h3 class=h3_portfolio>Travel agency</h3> 
+						<p> Des voyages surprises.</p>
+					</figcaption>
+				</figure>	
+
+				<figure>
+					<img   src="files/images/portfolio/07.jpg" alt="">
+					<figcaption>
+						<i class="fas fa-eye"></i>
+						<h3 class=h3_portfolio>Space X </h3> 
+						<p>L'espace ouvert aux particuliers.</p>
+					</figcaption>
+				</figure>	
+
+				<figure>
+					<img  src="files/images/portfolio/08.jpg" alt="">
+					<figcaption>
+						<i class="fas fa-eye"></i>
+						<h3 class=h3_portfolio>Desk shop </h3>
+						<p>Besoin de fourniture de bureau ?</p>
+					</figcaption>
+				</figure>	
+			</div>
+		</section>
+
+
+		<!--Section CONTACT-->
+		
+		<section id="ancre_contact">
+		
+			<h2 id="contact_title">CONTACT</h2>	
+
+			<div id="container_contact">
+
+
+						
+					<div id="formulaire">
+						<address>
+							<span id="contact_info">Contact Info</span><br><br><strong>WebAgency SAS</strong> <br>25 rue d'Hauteville 75010 Paris <br> Tel: 01 02 03 04 05
+						</address>
+
+						<form  method="post" action="traitement.page_php_inexistante">
+							<div>
+								<input class="padding_left" type="text" name="nom" id="nom" placeholder="Name" required><br>
+							</div>
+							<div>
+								<input class="padding_left" type="email" name="email" id="email" placeholder="Email" required><br>
+							</div>
+							<div>
+								<input class="padding_left" type="text" name="subject" id="subject" placeholder="Subject" required><br>
+							</div>
+							<div>
+								<textarea class="padding_left" rows="10"  name="commentaire" id="commentaire" placeholder="Message" required></textarea><br>
+							</div> 
+							<div>
+								<input class="bouton_formulaire" type="button" name="submit" id="submit" value="Send Message">
+							</div>
+						</form>
+					</div>
+					
+					<iframe src="https://maps.google.com/maps?width=100&amp;height=600&amp;hl=en&amp;q=7%20cit%C3%A9%20du%20paradis%20paris+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed"></iframe>
+					
+					<div id="bg_iframe"></div>
+				
+			</div>		
+		
+		</section>
+
+</body>
+</html>

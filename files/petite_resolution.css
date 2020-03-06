@@ -1,0 +1,108 @@
+@media screen and (max-width: 1280px)
+{
+
+
+.fixed-header {
+
+	height:5em;
+}
+
+
+#menu_burger {
+
+	visibility: hidden;
+}
+
+
+.container_arrow_left {
+
+    width:1.5em;
+    height: 3em;
+   
+	
+}
+
+.container_arrow_right {
+
+	
+    width:1.5em;
+    height:3em;
+   
+	
+}
+
+#left_arrow {
+
+	
+    height: 0.5em;
+    width: 0.5em; 
+   
+
+    
+
+}
+
+#right_arrow {
+
+
+    height: 0.5em;
+    width: 0.5em;
+
+    
+
+}
+
+
+ h1,h2 {
+
+	font-size: 1.5em;
+}
+
+p {
+
+	font-size: 0.8em;
+}
+
+
+#container_ordinateur {
+
+display: none;
+
+}
+
+.list_service {
+
+	
+	width:100%;
+
+}
+
+
+
+figure {
+
+width:35%;
+
+}
+
+.h3_portfolio {
+
+	font-size: 1em;
+	margin-bottom: .5em;
+}
+
+figcaption p {
+
+	font-size: .7rem;
+	line-height: .5em;
+}
+
+#container_contact {
+
+	display: inline-block;
+}
+
+#formulaire {
+
+	display:inline-block;
+}
